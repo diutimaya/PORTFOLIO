@@ -8,9 +8,9 @@
 
 <title>Diutimaya Mohanty | Data Science Portfolio</title>
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -22,19 +22,19 @@
 
 <header class="navbar">
 
-<h2 class="logo">Diutimaya</h2>
+<div class="logo">Diutimaya</div>
 
 <nav>
 
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
-<a href="#github">GitHub</a>
 <a href="#contact">Contact</a>
 
 </nav>
 
 </header>
+
 
 
 <!-- HERO SECTION -->
@@ -46,7 +46,7 @@
 <h3>Data Science Student | Machine Learning Enthusiast</h3>
 
 <p>
-Passionate about building machine learning models and analyzing data
+Building machine learning systems and analyzing data
 to solve real-world problems.
 </p>
 
@@ -58,7 +58,7 @@ to solve real-world problems.
 GitHub
 </a>
 
-<a href="assets/resume.pdf" class="btn-outline" download>
+<a href="#" class="btn-outline">
 Download Resume
 </a>
 
@@ -67,24 +67,21 @@ Download Resume
 </section>
 
 
-<!-- ABOUT SECTION -->
+
+<!-- ABOUT -->
 
 <section id="about" class="section">
 
 <h2>About Me</h2>
 
-<p>
+<p class="about-text">
 
 I am a Computer Science Engineering (Data Science) student passionate about
-extracting insights from data and building machine learning solutions for
-real-world problems.
+extracting insights from data and building machine learning solutions
+for real-world problems.
 
-<br><br>
-
-I have experience working with Python, SQL, and machine learning libraries
-to build predictive models and perform data analysis. I enjoy transforming
-complex datasets into meaningful insights using visualization and
-statistical techniques.
+I work with Python, SQL, and machine learning libraries to analyze data,
+build predictive models, and create visualizations that communicate insights effectively.
 
 </p>
 
@@ -92,7 +89,7 @@ statistical techniques.
 
 
 
-<!-- SKILLS SECTION -->
+<!-- SKILLS -->
 
 <section id="skills" class="section">
 
@@ -100,55 +97,39 @@ statistical techniques.
 
 <div class="skills-grid">
 
-
 <div class="skill-card">
 <h3>Programming</h3>
-<p>
-Python<br>
-SQL
-</p>
+<span class="badge">Python</span>
+<span class="badge">SQL</span>
 </div>
-
 
 <div class="skill-card">
 <h3>Data Analysis</h3>
-<p>
-Pandas<br>
-NumPy<br>
-Exploratory Data Analysis
-</p>
+<span class="badge">Pandas</span>
+<span class="badge">NumPy</span>
+<span class="badge">EDA</span>
 </div>
-
 
 <div class="skill-card">
 <h3>Machine Learning</h3>
-<p>
-Scikit-learn<br>
-Classification Models<br>
-Model Evaluation
-</p>
+<span class="badge">Scikit-learn</span>
+<span class="badge">Classification</span>
+<span class="badge">Model Evaluation</span>
 </div>
-
 
 <div class="skill-card">
 <h3>Visualization</h3>
-<p>
-Matplotlib<br>
-Seaborn<br>
-Tableau
-</p>
+<span class="badge">Matplotlib</span>
+<span class="badge">Seaborn</span>
+<span class="badge">Tableau</span>
 </div>
-
 
 <div class="skill-card">
 <h3>Tools</h3>
-<p>
-Git<br>
-GitHub<br>
-Jupyter Notebook
-</p>
+<span class="badge">Git</span>
+<span class="badge">GitHub</span>
+<span class="badge">Jupyter</span>
 </div>
-
 
 </div>
 
@@ -156,7 +137,54 @@ Jupyter Notebook
 
 
 
-<!-- PROJECTS SECTION -->
+<!-- FEATURED PROJECT -->
+
+<section class="section featured">
+
+<h2>Featured Project</h2>
+
+<div class="featured-card">
+
+<h3>Financial Fraud Detection System</h3>
+
+<p>
+
+Machine learning system to detect fraudulent financial transactions
+using classification models and SQL-based data pipelines.
+
+</p>
+
+<div class="result-box">
+
+<strong>Results</strong>
+
+<ul>
+
+<li>Detected fraudulent transactions using ML models</li>
+<li>Improved fraud detection accuracy</li>
+<li>Applied model evaluation techniques</li>
+
+</ul>
+
+</div>
+
+<div class="tech-stack">
+
+<span class="badge">Python</span>
+<span class="badge">SQL</span>
+<span class="badge">Scikit-learn</span>
+
+</div>
+
+<a href="#" class="btn">View Project</a>
+
+</div>
+
+</section>
+
+
+
+<!-- PROJECTS -->
 
 <section id="projects" class="section">
 
@@ -167,35 +195,19 @@ Jupyter Notebook
 
 <div class="project-card">
 
-<h3>Financial Fraud Risk Detection System</h3>
-
-<p>
-Machine learning model to detect fraudulent financial transactions
-using SQL data pipelines and classification models.
-</p>
-
-<p class="tech">
-Python • SQL • Scikit-learn
-</p>
-
-<a href="#" class="btn-small">GitHub</a>
-
-</div>
-
-
-
-<div class="project-card">
-
 <h3>Credit Card Fraud Detection</h3>
 
 <p>
-Built ML models to detect fraudulent credit card transactions
-using classification algorithms and evaluation metrics.
+Built machine learning models to identify fraudulent
+credit card transactions using classification algorithms.
 </p>
 
-<p class="tech">
-Python • Machine Learning
-</p>
+<div class="tech-stack">
+
+<span class="badge">Python</span>
+<span class="badge">Machine Learning</span>
+
+</div>
 
 <a href="#" class="btn-small">GitHub</a>
 
@@ -205,16 +217,20 @@ Python • Machine Learning
 
 <div class="project-card">
 
-<h3>Hospital Emergency Room Analytics</h3>
+<h3>Hospital ER Analytics</h3>
 
 <p>
-Analyzed hospital ER datasets and built Tableau dashboards
-to visualize patient wait times and department workload.
+Analyzed hospital emergency room datasets and created
+Tableau dashboards to visualize patient wait times.
 </p>
 
-<p class="tech">
-Python • SQL • Tableau
-</p>
+<div class="tech-stack">
+
+<span class="badge">Python</span>
+<span class="badge">SQL</span>
+<span class="badge">Tableau</span>
+
+</div>
 
 <a href="#" class="btn-small">GitHub</a>
 
@@ -224,16 +240,20 @@ Python • SQL • Tableau
 
 <div class="project-card">
 
-<h3>E-commerce Customer Behavior Analysis</h3>
+<h3>E-commerce Customer Behavior</h3>
 
 <p>
-Analyzed online shopping datasets using Python and SQL
-to identify customer purchase patterns.
+Analyzed online shopping datasets to identify
+customer purchase patterns and behavior.
 </p>
 
-<p class="tech">
-Python • SQL • Data Analysis
-</p>
+<div class="tech-stack">
+
+<span class="badge">Python</span>
+<span class="badge">SQL</span>
+<span class="badge">EDA</span>
+
+</div>
 
 <a href="#" class="btn-small">GitHub</a>
 
@@ -246,13 +266,17 @@ Python • SQL • Data Analysis
 <h3>Agentic AI Healthcare Platform</h3>
 
 <p>
-AI-based healthcare coordination platform for symptom
-analysis and specialist recommendation.
+AI-based healthcare coordination system for
+symptom analysis and specialist recommendation.
 </p>
 
-<p class="tech">
-Python • AI • ML
-</p>
+<div class="tech-stack">
+
+<span class="badge">Python</span>
+<span class="badge">AI</span>
+<span class="badge">ML</span>
+
+</div>
 
 <a href="#" class="btn-small">GitHub</a>
 
@@ -265,62 +289,30 @@ Python • AI • ML
 
 
 
-<!-- GITHUB SECTION -->
+<!-- CONTACT -->
 
-<section id="github" class="section">
-
-<h2>GitHub</h2>
-
-<p>
-Explore my repositories and open-source work on GitHub.
-</p>
-
-<br>
-
-<a href="https://github.com/diuti" class="btn" target="_blank">
-Visit My GitHub
-</a>
-
-</section>
-
-
-
-<!-- CONTACT SECTION -->
-
-<section id="contact" class="section">
+<section id="contact" class="section contact">
 
 <h2>Contact</h2>
 
 <p>Email: your-email@example.com</p>
 
-<p>
+<div class="contact-links">
 
-<a href="https://github.com/diuti" target="_blank">
-GitHub
-</a>
+<a href="https://github.com/diuti">GitHub</a>
+<a href="#">LinkedIn</a>
 
-|
-
-<a href="#" target="_blank">
-LinkedIn
-</a>
-
-</p>
+</div>
 
 </section>
 
 
 
-<!-- FOOTER -->
-
 <footer>
 
-<p>
-© 2026 Diutimaya Mohanty
-</p>
+<p>© 2026 Diutimaya Mohanty</p>
 
 </footer>
-
 
 
 </body>
