@@ -12,6 +12,7 @@ line-height:1.6;
 scroll-behavior:smooth;
 }
 
+
 /* NAVBAR */
 
 .navbar{
@@ -20,35 +21,38 @@ justify-content:space-between;
 align-items:center;
 padding:20px 10%;
 background:#020617;
-position:sticky;
-top:0;
 }
 
 .navbar nav a{
 margin-left:25px;
 text-decoration:none;
 color:#cbd5f5;
-font-weight:500;
 }
 
 .navbar nav a:hover{
 color:#38bdf8;
 }
 
+
 /* HERO */
 
 .hero{
-height:90vh;
+padding:120px 10%;
+}
+
+.hero-container{
 display:flex;
-flex-direction:column;
-justify-content:center;
 align-items:center;
-text-align:center;
-background:linear-gradient(120deg,#0f172a,#1e293b);
+justify-content:space-between;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:600px;
 }
 
 .hero h1{
-font-size:56px;
+font-size:50px;
 margin-bottom:10px;
 }
 
@@ -58,9 +62,16 @@ margin-bottom:20px;
 }
 
 .hero p{
-max-width:600px;
 margin-bottom:30px;
 }
+
+
+.hero-image img{
+width:260px;
+border-radius:50%;
+border:4px solid #3b82f6;
+}
+
 
 /* BUTTONS */
 
@@ -92,6 +103,7 @@ display:inline-block;
 margin-top:15px;
 }
 
+
 /* SECTIONS */
 
 .section{
@@ -100,14 +112,8 @@ padding:90px 10%;
 
 .section h2{
 margin-bottom:40px;
-font-size:32px;
 }
 
-/* ABOUT */
-
-.about-text{
-max-width:700px;
-}
 
 /* SKILLS */
 
@@ -120,41 +126,34 @@ gap:25px;
 .skill-card{
 background:#1e293b;
 padding:25px;
-border-radius:10px;
+border-radius:12px;
 }
 
-/* BADGES */
-
-.badge{
+.badges span{
 display:inline-block;
 background:#334155;
 padding:6px 12px;
 border-radius:20px;
+margin:5px;
 font-size:13px;
-margin:4px;
 }
+
 
 /* FEATURED */
 
 .featured-card{
 background:#1e293b;
 padding:40px;
-border-radius:15px;
-max-width:800px;
+border-radius:12px;
+max-width:700px;
 }
 
-.result-box{
-background:#020617;
-padding:20px;
-border-radius:10px;
-margin:20px 0;
-}
 
 /* PROJECTS */
 
 .projects-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
 }
 
@@ -167,16 +166,9 @@ transition:0.3s;
 
 .project-card:hover{
 transform:translateY(-10px);
-box-shadow:0 15px 40px rgba(0,0,0,0.4);
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
 }
 
-/* CONTACT */
-
-.contact-links a{
-margin-right:20px;
-color:#38bdf8;
-text-decoration:none;
-}
 
 /* FOOTER */
 
