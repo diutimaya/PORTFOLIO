@@ -61,7 +61,7 @@ Building intelligent systems that solve real-world problems
 
 <p class="fade-in delay-3">
 I build ML pipelines for fraud detection, healthcare analytics,
-and customer behavior insights — turning messy data into decisions
+and tourist intelligence — turning messy data into decisions
 that matter.
 </p>
 
@@ -99,7 +99,7 @@ Download Resume
 
 <div class="hero-stat-badge badge-1">
 
-<span class="badge-num">4+</span>
+<span class="badge-num">5+</span>
 <span class="badge-label">Projects</span>
 
 </div>
@@ -132,17 +132,16 @@ Download Resume
 <div class="about-grid">
 
 <p>
-I'm a Computer Science Engineering (Data Science) student at
-<strong>NIIT University</strong>, passionate about building ML systems
-that solve high-stakes real-world problems — from catching financial
-fraud to improving patient outcomes.
+I'm a CSE (Data Science) student at <strong>NIIT University</strong>.
+What pulled me toward this field was a simple realization — that a
+well-trained model could flag a fraud before someone loses their savings,
+or catch a health risk before it turns critical.
 </p>
 
 <p>
-I work across the full data pipeline: wrangling messy data with
-Pandas & SQL, training and evaluating models with Scikit-learn,
-and communicating results through dashboards and visualizations.
-My recent work explores Agentic AI systems for healthcare coordination.
+I build ML systems because the decisions they make affect real people,
+and that's what keeps me invested. I'm looking for internships where I
+can work on problems that actually have stakes.
 </p>
 
 </div>
@@ -266,6 +265,8 @@ My recent work explores Agentic AI systems for healthcare coordination.
 <span>Git</span>
 <span>GitHub</span>
 <span>Jupyter</span>
+<span>Flask</span>
+<span>Docker</span>
 
 </div>
 
@@ -301,16 +302,17 @@ My recent work explores Agentic AI systems for healthcare coordination.
 <h3>Financial Fraud Detection System</h3>
 
 <p>
-End-to-end ML pipeline to detect fraudulent financial transactions
-using classification models and SQL-based data pipelines.
-Achieved strong precision/recall balance on imbalanced datasets.
+ML pipeline to catch fraudulent transactions in 284,807 real credit
+card records — where only 492 are actually fraud. Used SMOTE to handle
+the class imbalance, SQLite for production-style data storage, and
+Random Forest as the final model.
 </p>
 
 <ul>
 
-<li>Dataset: 500K+ financial transaction records</li>
-<li>Models: Logistic Regression, Random Forest</li>
-<li>Evaluation: AUC-ROC</li>
+<li>284,807 transactions · 30 features · 0.17% fraud rate</li>
+<li>SMOTE oversampling + StandardScaler preprocessing</li>
+<li>Random Forest vs Logistic Regression — evaluated on AUC-ROC, precision &amp; recall</li>
 
 </ul>
 
@@ -319,7 +321,8 @@ Achieved strong precision/recall balance on imbalanced datasets.
 <span>Python</span>
 <span>SQL</span>
 <span>Scikit-learn</span>
-<span>Machine Learning</span>
+<span>SMOTE</span>
+<span>Random Forest</span>
 
 </div>
 
@@ -347,14 +350,15 @@ View on GitHub →
 <h3>Hospital ER Analytics</h3>
 
 <p>
-Analyzed hospital emergency room datasets and created
-Tableau dashboards to identify patient flow bottlenecks.
+Analyzed 9,216 ER patient records to find where hospitals lose time.
+Avg wait time ~35 mins. Built a Tableau dashboard covering department
+load, satisfaction scores, peak hours, and age group breakdowns.
 </p>
 
 <div class="badges">
 
 <span>Python</span>
-<span>SQL</span>
+<span>Pandas</span>
 <span>Tableau</span>
 
 </div>
@@ -375,22 +379,24 @@ GitHub →
 
 <div class="project-num">02</div>
 
-<h3>E-commerce Customer Behavior</h3>
+<h3>AI Smart Tourist Guide</h3>
 
 <p>
-Analyzed online shopping datasets to uncover purchasing
-patterns and customer segments.
+Full-stack AI app that recommends tourist destinations based on user
+preferences and learns from feedback. Integrates live weather, maps,
+and translation APIs via Flask backend and Streamlit UI.
 </p>
 
 <div class="badges">
 
 <span>Python</span>
-<span>SQL</span>
-<span>EDA</span>
+<span>Flask</span>
+<span>Scikit-learn</span>
+<span>REST APIs</span>
 
 </div>
 
-<a href="https://github.com/diutimaya/ecommerce-customer-behavior-analysis"
+<a href="https://github.com/diutimaya/AI-Based-Smart-Tourist-Guide-System"
 target="_blank"
 class="btn-small">
 
@@ -411,9 +417,9 @@ GitHub →
 <h3>Agentic AI Healthcare Platform</h3>
 
 <p>
-AI-powered healthcare coordination system that uses
-LLM agents to analyze symptoms and generate care
-recommendations.
+LLM-powered system with 4 specialized agents — symptom analysis,
+specialist routing, appointment management, and role-based access
+control. Containerized with Docker, CI/CD via Jenkins.
 </p>
 
 <div class="badges">
@@ -421,7 +427,8 @@ recommendations.
 <span>Python</span>
 <span>LLMs</span>
 <span>Agentic AI</span>
-<span>Machine Learning</span>
+<span>Docker</span>
+<span>Jenkins</span>
 
 </div>
 
