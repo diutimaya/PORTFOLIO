@@ -713,3 +713,60 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+@media(max-width:768px){
+
+    /* HERO LAYOUT */
+    .hero{
+        padding: 100px 20px 60px;
+        height: auto;
+    }
+
+    /* INTRO TEXT */
+    .intro{
+        font-size: 0.85rem;
+    }
+
+    /* MAIN HEADING */
+    .hero h1{
+        font-size: 2.2rem;
+        line-height: 1.3;
+        letter-spacing: -0.5px;
+    }
+
+    /* DESCRIPTION */
+    .hero p{
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-top: 15px;
+    }
+
+    /* PROOF TEXT */
+    .hero-proof{
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+
+    /* BUTTONS STACK */
+    .hero-actions{
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* PARTICLES LIGHTER (IMPORTANT) */
+    #particles{
+        opacity: 0.4;
+    }
+
+    /* SPOTLIGHT SMALLER */
+    .spotlight{
+        width: 400px;
+        height: 400px;
+    }
+}
