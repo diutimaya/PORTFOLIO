@@ -1,462 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Diutimaya Mohanty — Data Analyst</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diutimaya Mohanty | AI Engineer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- ═══════════ NAV ═══════════ -->
-  <header class="site-header">
-    <nav class="nav">
-      <a href="#" class="nav-brand">Diutimaya Mohanty</a>
-      <ul class="nav-list">
-        <li><a href="#work"    class="nav-item">Work</a></li>
-        <li><a href="#skills"  class="nav-item">Skills</a></li>
-        <li><a href="#certs"   class="nav-item">Certifications</a></li>
-        <li><a href="#contact" class="nav-item nav-item-cta">Let's Talk</a></li>
-      </ul>
-      <button class="burger" id="burger" aria-label="Menu">
-        <span></span><span></span>
-      </button>
-    </nav>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#work"    class="mm-link">Work</a>
-      <a href="#skills"  class="mm-link">Skills</a>
-      <a href="#certs"   class="mm-link">Certifications</a>
-      <a href="#contact" class="mm-link">Let's Talk</a>
-    </div>
-  </header>
+<!-- 🔥 HERO SECTION -->
+<section class="hero">
+  <h1 class="hero-title">Diutimaya Mohanty</h1>
 
-  <!-- ═══════════ HERO ═══════════ -->
-  <section class="hero">
-    <div class="hero-kicker">
-      <span class="kicker-line"></span>
-      <span class="kicker-text">Available for opportunities</span>
-    </div>
+  <p class="hero-subtitle">
+    AI & Data Science Engineer building intelligent systems that solve real-world problems using machine learning, deep learning, and data-driven decision making.
+  </p>
 
-    <div class="hero-body">
-      <div class="hero-left">
-        <h1 class="hero-heading">
-          Turning data<br>
-          into <em>decisions</em><span class="heading-dot">.</span>
-        </h1>
-        <div class="hero-meta">
-          <p class="hero-name-line">Diutimaya Mohanty</p>
-          <p class="hero-role-line">Data Analyst &amp; ML Practitioner</p>
-        </div>
-      </div>
+  <div class="hero-buttons">
+    <a href="#" class="btn-primary">Download Resume</a>
+    <a href="#projects" class="btn-secondary">View Projects</a>
+  </div>
+</section>
 
-      <div class="hero-right">
-        <p class="hero-desc">
-          B.Tech Computer Science student at NIIT University, specialising in Data Science.
-          I work with Python, SQL, and statistical modelling to surface insights from complex
-          datasets — from fraud detection in 280K+ financial records to healthcare analytics
-          and e-commerce behaviour.
-        </p>
-        <div class="hero-actions">
-          <a href="#work" class="btn-main">See my work</a>
-          <a href="resume.pdf" class="btn-ghost" download>Download CV</a>
-        </div>
-        <div class="hero-links">
-          <a href="https://github.com/diutimaya" target="_blank" class="hlink">GitHub</a>
-          <span class="hlink-sep">·</span>
-          <a href="https://www.linkedin.com/in/diutimaya-mohanty" target="_blank" class="hlink">LinkedIn</a>
-          <span class="hlink-sep">·</span>
-          <a href="mailto:diutimayamohanty17@gmail.com" class="hlink">Email</a>
-        </div>
+<!-- 🔥 SKILLS -->
+<section class="section fade-in">
+  <h2>Technical Skills</h2>
+
+  <div class="grid">
+    <div class="card">Python</div>
+    <div class="card">JavaScript</div>
+    <div class="card">SQL</div>
+    <div class="card">TensorFlow</div>
+    <div class="card">Scikit-learn</div>
+    <div class="card">Pandas</div>
+    <div class="card">NumPy</div>
+    <div class="card">React</div>
+    <div class="card">MongoDB</div>
+    <div class="card">MySQL</div>
+  </div>
+</section>
+
+<!-- 🔥 PROJECTS -->
+<section id="projects" class="section fade-in">
+  <h2>Featured Projects</h2>
+
+  <div class="project-grid">
+
+    <!-- Project 1 -->
+    <div class="card">
+      <h3>Disease Prediction Model</h3>
+      <p>
+        Developed a Random Forest classification model achieving 
+        <strong>92% accuracy</strong> using feature engineering and hyperparameter tuning.
+      </p>
+
+      <div class="metrics">
+        <span>📊 Accuracy: 92%</span>
+        <span>📁 Dataset: 500+</span>
       </div>
     </div>
 
-    <div class="hero-stats">
-      <div class="stat-item">
-        <span class="stat-num">3</span>
-        <span class="stat-lbl">Projects</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-num">500K+</span>
-        <span class="stat-lbl">Rows analysed</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-num">7.59</span>
-        <span class="stat-lbl">CGPA</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-num">2023–27</span>
-        <span class="stat-lbl">B.Tech CSE · NIIT</span>
+    <!-- Project 2 -->
+    <div class="card">
+      <h3>Crop Disease Detection</h3>
+      <p>
+        Built a CNN-based deep learning model for plant disease detection optimized for edge devices like Raspberry Pi.
+      </p>
+
+      <div class="metrics">
+        <span>🧠 CNN Model</span>
+        <span>⚡ Edge Optimized</span>
       </div>
     </div>
-  </section>
 
-  <!-- ═══════════ WORK ═══════════ -->
-  <section class="section" id="work">
-    <div class="container">
+    <!-- Project 3 -->
+    <div class="card">
+      <h3>Real Estate System</h3>
+      <p>
+        Designed a fully normalized database system with 5+ tables and 100+ entries including ER modeling and SQL queries.
+      </p>
 
-      <div class="section-label reveal">
-        <span class="label-num">01</span>
-        <span class="label-text">Selected Work</span>
-      </div>
-
-      <!-- Project 1 -->
-      <article class="project reveal">
-        <div class="project-left">
-          <span class="proj-index">01</span>
-          <div class="proj-tags">
-            <span class="proj-tag">Machine Learning</span>
-            <span class="proj-tag">SQL</span>
-          </div>
-        </div>
-        <div class="project-right">
-          <div class="proj-header">
-            <h2 class="proj-title">Financial Fraud Risk Detection</h2>
-            <a href="https://github.com/diutimaya" target="_blank" class="proj-link">
-              View on GitHub
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="13" height="13">
-                <path d="M3 8h10M9 4l4 4-4 4"/>
-              </svg>
-            </a>
-          </div>
-          <p class="proj-desc">
-            Built a classification pipeline to detect fraudulent patterns across 280,000+ financial
-            transactions stored in SQLite. Engineered transaction features, trained and compared
-            multiple Scikit-learn models, and evaluated performance using Precision, Recall, F1-score,
-            and ROC-AUC. Surfaced high-risk clusters through Matplotlib and Seaborn visuals.
-          </p>
-          <div class="proj-numbers">
-            <div class="pnum">
-              <span class="pnum-val">280K+</span>
-              <span class="pnum-lbl">transaction records</span>
-            </div>
-            <div class="pnum">
-              <span class="pnum-val">ROC-AUC</span>
-              <span class="pnum-lbl">primary eval metric</span>
-            </div>
-            <div class="pnum">
-              <span class="pnum-val">SQLite</span>
-              <span class="pnum-lbl">data storage</span>
-            </div>
-          </div>
-          <div class="proj-stack">
-            Python · Scikit-learn · Pandas · NumPy · SQLite · Matplotlib · Seaborn
-          </div>
-        </div>
-      </article>
-
-      <div class="proj-rule"></div>
-
-      <!-- Project 2 -->
-      <article class="project reveal">
-        <div class="project-left">
-          <span class="proj-index">02</span>
-          <div class="proj-tags">
-            <span class="proj-tag">EDA</span>
-            <span class="proj-tag">Business Analytics</span>
-          </div>
-        </div>
-        <div class="project-right">
-          <div class="proj-header">
-            <h2 class="proj-title">E-Commerce Customer Behaviour Analysis</h2>
-            <a href="https://github.com/diutimaya" target="_blank" class="proj-link">
-              View on GitHub
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="13" height="13">
-                <path d="M3 8h10M9 4l4 4-4 4"/>
-              </svg>
-            </a>
-          </div>
-          <p class="proj-desc">
-            Processed and cleaned 500,000+ transaction records from a UK-based retailer. Used SQL to
-            extract purchasing trends and segment customers by behaviour. Identified high-value customer
-            groups and built visual dashboards to directly support sales and marketing strategy.
-          </p>
-          <div class="proj-numbers">
-            <div class="pnum">
-              <span class="pnum-val">500K+</span>
-              <span class="pnum-lbl">transactions cleaned</span>
-            </div>
-            <div class="pnum">
-              <span class="pnum-val">SQL</span>
-              <span class="pnum-lbl">query engine</span>
-            </div>
-          </div>
-          <div class="proj-stack">
-            Python · SQL · Pandas · NumPy · Matplotlib · Seaborn
-          </div>
-        </div>
-      </article>
-
-      <div class="proj-rule"></div>
-
-      <!-- Project 3 -->
-      <article class="project reveal">
-        <div class="project-left">
-          <span class="proj-index">03</span>
-          <div class="proj-tags">
-            <span class="proj-tag">Healthcare</span>
-            <span class="proj-tag">Tableau</span>
-          </div>
-        </div>
-        <div class="project-right">
-          <div class="proj-header">
-            <h2 class="proj-title">Hospital Emergency Room Analytics</h2>
-            <a href="https://github.com/diutimaya" target="_blank" class="proj-link">
-              View on GitHub
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="13" height="13">
-                <path d="M3 8h10M9 4l4 4-4 4"/>
-              </svg>
-            </a>
-          </div>
-          <p class="proj-desc">
-            Explored 9,216 ER patient records to understand patient flow and hospital service efficiency.
-            Cleaned and prepared the dataset, analysed visit patterns with Pandas, and built an
-            interactive Tableau dashboard monitoring wait times and department workload in real time.
-          </p>
-          <div class="proj-numbers">
-            <div class="pnum">
-              <span class="pnum-val">9,216</span>
-              <span class="pnum-lbl">patient records</span>
-            </div>
-            <div class="pnum">
-              <span class="pnum-val">Tableau</span>
-              <span class="pnum-lbl">live dashboard</span>
-            </div>
-          </div>
-          <div class="proj-stack">
-            Python · Pandas · NumPy · Matplotlib · Seaborn · Tableau
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- ═══════════ SKILLS ═══════════ -->
-  <section class="section section-warm" id="skills">
-    <div class="container">
-
-      <div class="section-label reveal">
-        <span class="label-num">02</span>
-        <span class="label-text">Skills &amp; Toolkit</span>
-      </div>
-
-      <div class="skills-layout reveal">
-
-        <div class="skill-col">
-          <h3 class="skill-col-title">Programming</h3>
-          <ul class="skill-list">
-            <li class="skill-item skill-item-strong">Python</li>
-            <li class="skill-item skill-item-strong">SQL</li>
-          </ul>
-        </div>
-
-        <div class="skill-col">
-          <h3 class="skill-col-title">Data Analysis</h3>
-          <ul class="skill-list">
-            <li class="skill-item skill-item-strong">Pandas</li>
-            <li class="skill-item skill-item-strong">NumPy</li>
-            <li class="skill-item">Exploratory Data Analysis</li>
-            <li class="skill-item">Feature Engineering</li>
-            <li class="skill-item">Data Cleaning</li>
-            <li class="skill-item">Statistical Analysis</li>
-          </ul>
-        </div>
-
-        <div class="skill-col">
-          <h3 class="skill-col-title">Machine Learning</h3>
-          <ul class="skill-list">
-            <li class="skill-item skill-item-strong">Scikit-learn</li>
-            <li class="skill-item">Classification Models</li>
-            <li class="skill-item">Model Evaluation</li>
-          </ul>
-        </div>
-
-        <div class="skill-col">
-          <h3 class="skill-col-title">Visualisation</h3>
-          <ul class="skill-list">
-            <li class="skill-item skill-item-strong">Tableau</li>
-            <li class="skill-item">Matplotlib</li>
-            <li class="skill-item">Seaborn</li>
-          </ul>
-        </div>
-
-        <div class="skill-col">
-          <h3 class="skill-col-title">Tools</h3>
-          <ul class="skill-list">
-            <li class="skill-item">Jupyter Notebook</li>
-            <li class="skill-item">Git &amp; GitHub</li>
-            <li class="skill-item">SQLite</li>
-            <li class="skill-item">Microsoft Excel</li>
-          </ul>
-        </div>
-
+      <div class="metrics">
+        <span>📊 5 Tables</span>
+        <span>📁 100+ Records</span>
       </div>
     </div>
-  </section>
 
-  <!-- ═══════════ CERTIFICATIONS ═══════════ -->
-  <section class="section" id="certs">
-    <div class="container">
+  </div>
+</section>
 
-      <div class="section-label reveal">
-        <span class="label-num">03</span>
-        <span class="label-text">Certifications</span>
-      </div>
+<!-- 🔥 ACHIEVEMENTS -->
+<section class="section fade-in">
+  <h2>Key Achievements</h2>
 
-      <div class="certs-list">
+  <div class="grid">
+    <div class="card">🚀 10+ Projects</div>
+    <div class="card">📊 500+ Data Points</div>
+    <div class="card">🧠 ML Models Built</div>
+    <div class="card">⚡ Edge Deployment</div>
+  </div>
+</section>
 
-        <div class="cert-row reveal">
-          <div class="cert-left">
-            <span class="cert-year">2025</span>
-          </div>
-          <div class="cert-mid">
-            <p class="cert-title">Design &amp; Implementation of Computational Solutions</p>
-            <p class="cert-org">NIIT University Workshop</p>
-          </div>
-          <div class="cert-right">
-            <span class="cert-pill">Verified</span>
-          </div>
-        </div>
+<!-- 🔥 ABOUT -->
+<section class="section fade-in">
+  <h2>About Me</h2>
 
-        <div class="cert-row reveal">
-          <div class="cert-left">
-            <span class="cert-year">2026</span>
-          </div>
-          <div class="cert-mid">
-            <p class="cert-title">Microsoft Excel — Beginner to Advanced</p>
-            <p class="cert-org">Udemy</p>
-          </div>
-          <div class="cert-right">
-            <span class="cert-pill">Verified</span>
-          </div>
-        </div>
+  <p class="about">
+    I am an AI & Data Science student focused on building intelligent systems that bridge the gap between data and real-world impact.
+    My work spans machine learning, predictive analytics, and system design.
+  </p>
+</section>
 
-      </div>
-    </div>
-  </section>
+<!-- 🔥 CONTACT -->
+<section class="section fade-in">
+  <h2>Contact</h2>
 
-  <!-- ═══════════ CONTACT ═══════════ -->
-  <section class="section section-dark" id="contact">
-    <div class="container">
+  <p>Email: your@email.com</p>
+  <p>LinkedIn: linkedin.com/in/yourprofile</p>
+</section>
 
-      <div class="contact-top reveal">
-        <p class="contact-eyebrow">Let's work together</p>
-        <h2 class="contact-heading">
-          Open to analyst roles,<br>internships &amp; collaborations.
-        </h2>
-        <a href="mailto:diutimayamohanty17@gmail.com" class="contact-email-big">
-          diutimayamohanty17@gmail.com
-        </a>
-      </div>
+<!-- 🔥 ANIMATION SCRIPT -->
+<script>
+const elements = document.querySelectorAll(".fade-in");
 
-      <div class="contact-grid reveal">
-
-        <div class="contact-details">
-          <div class="cd-row">
-            <span class="cd-label">Location</span>
-            <span class="cd-value">India · Open to Remote</span>
-          </div>
-          <div class="cd-row">
-            <span class="cd-label">Phone</span>
-            <span class="cd-value">Available on request</span>
-          </div>
-          <div class="cd-row">
-            <span class="cd-label">GitHub</span>
-            <a href="https://github.com/diutimaya" target="_blank" class="cd-value cd-link">
-              github.com/diutimaya
-            </a>
-          </div>
-          <div class="cd-row">
-            <span class="cd-label">LinkedIn</span>
-            <a href="https://www.linkedin.com/in/diutimaya-mohanty" target="_blank" class="cd-value cd-link">
-              Diutimaya Mohanty
-            </a>
-          </div>
-          <div class="cd-open">
-            <strong>Open to</strong> — Data Analyst · Data Science Intern · ML Engineer · Remote &amp; Hybrid roles
-          </div>
-        </div>
-
-        <div class="contact-form-col">
-          <div id="cform">
-            <div class="frow">
-              <label for="fn">Name</label>
-              <input type="text" id="fn" class="finput" placeholder="Your name" />
-            </div>
-            <div class="frow">
-              <label for="fe">Email</label>
-              <input type="email" id="fe" class="finput" placeholder="your@email.com" />
-            </div>
-            <div class="frow">
-              <label for="fm">Message</label>
-              <textarea id="fm" class="finput" rows="5" placeholder="Tell me about the opportunity…"></textarea>
-            </div>
-            <button class="fsend" onclick="sendMsg()">Send message</button>
-          </div>
-          <div id="fsuccess" class="fsuccess">
-            Message received — I'll be in touch soon.
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════ FOOTER ═══════════ -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span class="footer-name">Diutimaya Mohanty</span>
-      <span class="footer-copy">© 2026</span>
-      <div class="footer-nav">
-        <a href="https://github.com/diutimaya" target="_blank" class="footer-link">GitHub</a>
-        <a href="https://www.linkedin.com/in/diutimaya-mohanty" target="_blank" class="footer-link">LinkedIn</a>
-        <a href="mailto:diutimayamohanty17@gmail.com" class="footer-link">Email</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    /* sticky nav */
-    window.addEventListener('scroll', () => {
-      document.querySelector('.site-header').classList.toggle('scrolled', scrollY > 30);
-    });
-
-    /* burger */
-    const burger = document.getElementById('burger');
-    const menu   = document.getElementById('mobileMenu');
-    burger.addEventListener('click', () => {
-      menu.classList.toggle('open');
-      burger.classList.toggle('open');
-    });
-    menu.querySelectorAll('.mm-link').forEach(l =>
-      l.addEventListener('click', () => {
-        menu.classList.remove('open');
-        burger.classList.remove('open');
-      })
-    );
-
-    /* scroll reveal */
-    const obs = new IntersectionObserver(es => {
-      es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.08 });
-    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-
-    /* contact form */
-    function sendMsg() {
-      const n = document.getElementById('fn').value.trim();
-      const e = document.getElementById('fe').value.trim();
-      const m = document.getElementById('fm').value.trim();
-      if (!n || !e || !m) { alert('Please fill all fields.'); return; }
-      document.getElementById('cform').style.display = 'none';
-      document.getElementById('fsuccess').style.display = 'block';
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
     }
-  </script>
+  });
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
