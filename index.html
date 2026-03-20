@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <!-- NAV -->
+  <!-- ═══════════ NAV ═══════════ -->
   <header class="site-header">
     <nav class="nav">
       <a href="#" class="nav-brand">Diutimaya Mohanty</a>
@@ -33,7 +33,7 @@
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- ═══════════ HERO ═══════════ -->
   <section class="hero">
     <div class="hero-kicker">
       <span class="kicker-line"></span>
@@ -41,10 +41,10 @@
     </div>
 
     <div class="hero-body">
-      <div class="hero-intro">
+      <div class="hero-left">
         <h1 class="hero-heading">
           Turning data<br>
-          into decisions<span class="heading-dot">.</span>
+          into <em>decisions</em><span class="heading-dot">.</span>
         </h1>
         <div class="hero-meta">
           <p class="hero-name-line">Diutimaya Mohanty</p>
@@ -52,22 +52,21 @@
         </div>
       </div>
 
-      <div class="hero-sidebar">
+      <div class="hero-right">
         <p class="hero-desc">
           B.Tech Computer Science student at NIIT University, specialising in Data Science.
-          I work with Python, SQL, and statistical modelling to surface insights from complex datasets —
-          from fraud detection in 280K+ financial records to healthcare analytics and e-commerce behaviour.
+          I work with Python, SQL, and statistical modelling to surface insights from complex
+          datasets — from fraud detection in 280K+ financial records to healthcare analytics
+          and e-commerce behaviour.
         </p>
-
         <div class="hero-actions">
           <a href="#work" class="btn-main">See my work</a>
           <a href="Diutimaya_Mohanty_CV.pdf" class="btn-ghost" download>Download CV</a>
         </div>
-
         <div class="hero-links">
           <a href="https://github.com/diutimaya" target="_blank" class="hlink">GitHub</a>
           <span class="hlink-sep">·</span>
-          <a href="https://www.linkedin.com/in/diutimaya-mohanty17/" target="_blank" class="hlink">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/diutimaya-mohanty" target="_blank" class="hlink">LinkedIn</a>
           <span class="hlink-sep">·</span>
           <a href="mailto:diutimayamohanty17@gmail.com" class="hlink">Email</a>
         </div>
@@ -97,7 +96,7 @@
     </div>
   </section>
 
-  <!-- WORK -->
+  <!-- ═══════════ WORK ═══════════ -->
   <section class="section" id="work">
     <div class="container">
 
@@ -129,7 +128,7 @@
             Built a classification pipeline to detect fraudulent patterns across 280,000+ financial
             transactions stored in SQLite. Engineered transaction features, trained and compared
             multiple Scikit-learn models, and evaluated performance using Precision, Recall, F1-score,
-            and ROC-AUC. Surfaced high-risk transaction clusters through Matplotlib and Seaborn visuals.
+            and ROC-AUC. Surfaced high-risk clusters through Matplotlib and Seaborn visuals.
           </p>
           <div class="proj-numbers">
             <div class="pnum">
@@ -238,7 +237,7 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
+  <!-- ═══════════ SKILLS ═══════════ -->
   <section class="section section-warm" id="skills">
     <div class="container">
 
@@ -301,7 +300,7 @@
     </div>
   </section>
 
-  <!-- CERTIFICATIONS -->
+  <!-- ═══════════ CERTIFICATIONS ═══════════ -->
   <section class="section" id="certs">
     <div class="container">
 
@@ -342,7 +341,7 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- ═══════════ CONTACT ═══════════ -->
   <section class="section section-dark" id="contact">
     <div class="container">
 
@@ -369,11 +368,15 @@
           </div>
           <div class="cd-row">
             <span class="cd-label">GitHub</span>
-            <a href="https://github.com/diutimaya" target="_blank" class="cd-value cd-link">github.com/diutimaya</a>
+            <a href="https://github.com/diutimaya" target="_blank" class="cd-value cd-link">
+              github.com/diutimaya
+            </a>
           </div>
           <div class="cd-row">
             <span class="cd-label">LinkedIn</span>
-            <a href="https://www.linkedin.com/in/diutimaya-mohanty" target="_blank" class="cd-value cd-link">Diutimaya Mohanty</a>
+            <a href="https://www.linkedin.com/in/diutimaya-mohanty" target="_blank" class="cd-value cd-link">
+              Diutimaya Mohanty
+            </a>
           </div>
           <div class="cd-open">
             <strong>Open to</strong> — Data Analyst · Data Science Intern · ML Engineer · Remote &amp; Hybrid roles
@@ -405,7 +408,7 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ═══════════ FOOTER ═══════════ -->
   <footer class="footer">
     <div class="container footer-inner">
       <span class="footer-name">Diutimaya Mohanty</span>
@@ -419,7 +422,7 @@
   </footer>
 
   <script>
-    /* nav scroll */
+    /* sticky nav */
     window.addEventListener('scroll', () => {
       document.querySelector('.site-header').classList.toggle('scrolled', scrollY > 30);
     });
@@ -432,16 +435,19 @@
       burger.classList.toggle('open');
     });
     menu.querySelectorAll('.mm-link').forEach(l =>
-      l.addEventListener('click', () => { menu.classList.remove('open'); burger.classList.remove('open'); })
+      l.addEventListener('click', () => {
+        menu.classList.remove('open');
+        burger.classList.remove('open');
+      })
     );
 
-    /* reveal */
+    /* scroll reveal */
     const obs = new IntersectionObserver(es => {
       es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.08 });
     document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-    /* form */
+    /* contact form */
     function sendMsg() {
       const n = document.getElementById('fn').value.trim();
       const e = document.getElementById('fe').value.trim();
