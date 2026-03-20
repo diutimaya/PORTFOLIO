@@ -594,27 +594,52 @@ View Progress →
     });
 
     /* Particle canvas */
-    const c   = document.getElementById('particles');
-    const ctx = c.getContext('2d');
-    c.width   = window.innerWidth;
-    c.height  = window.innerHeight;
+  
+    const canvas = document.getElementById("particles");
+    const ctx = canvas.getContext("2d");
 
-    const pts = [];
-    for (let i = 0; i < 40; i++) {
-      pts.push({ x: Math.random() * c.width, y: Math.random() * c.height, r: 2 });
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener("resize", resizeCanvas);
+
+    let particles = [];
+
+    for (let i = 0; i < 60; i++) {
+        particles.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            r: Math.random() * 2 + 0.5,
+            dx: (Math.random() - 0.5) * 0.6,
+            dy: (Math.random() - 0.5) * 0.6
+        });
     }
 
-    function draw() {
-      ctx.clearRect(0, 0, c.width, c.height);
-      pts.forEach(pt => {
-        ctx.beginPath();
-        ctx.arc(pt.x, pt.y, pt.r, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(99,102,241,0.5)';
-        ctx.fill();
-      });
-      requestAnimationFrame(draw);
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        particles.forEach(p => {
+            // MOVE
+            p.x += p.dx;
+            p.y += p.dy;
+
+            // BOUNDARY BOUNCE
+            if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+            if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+
+            // DRAW
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fillStyle = "rgba(99,102,241,0.6)";
+            ctx.fill();
+        });
+
+        requestAnimationFrame(animate);
     }
-    draw();
+
+    animate();
   </script>
 
 </body>
