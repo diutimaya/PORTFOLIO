@@ -716,13 +716,14 @@ footer {
 
 @media(max-width:768px){
 
-    /* HERO LAYOUT */
-    .hero{
-        padding: 100px 20px 60px;
-        height: auto;
+    .hero h1{
+        font-size: 2rem;        /* reduce from 4rem */
+        line-height: 1.35;
+        letter-spacing: -0.5px;
+        word-break: break-word; /* prevents cutoff */
     }
 
-    /* INTRO TEXT */
+     /* INTRO TEXT */
     .intro{
         font-size: 0.85rem;
     }
@@ -769,4 +770,27 @@ footer {
         width: 400px;
         height: 400px;
     }
+
 }
+@media(max-width:768px){
+
+    .about-wrapper{
+        gap: 25px;
+    }
+
+    .about-image-box img{
+        width: 90%;
+        height: auto;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero{
+        max-width: 100%;
+        padding: 120px 20px 60px;
+    }
+
+}
+   
